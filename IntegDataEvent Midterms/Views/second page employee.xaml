@@ -5,8 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegDataEvent_Midterms.Views"
         mc:Ignorable="d"
-        Title="second_page" Height="450" Width="800">
+        Title="second_page" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock FontSize="90" Margin="10,63,-10,-63"><Run Text="AMAZING!!!!"/><LineBreak/><Run Text="YOU ARE employee"/></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="385"/>
+        </Grid.RowDefinitions>
+
+        <!--Top portion - Where the account is-->
+        <Border Grid.Row="0" Grid.ColumnSpan="2" Background="MediumPurple">
+
+        </Border>
+        <StackPanel Grid.Column="0" Width="800" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="Welcome employee _____"/>
+        </StackPanel>
+
+        <!--Side bar - Where the options are-->
+        <Border Grid.Column="0" Grid.Row="1" Background="Bisque" Margin="0,0,0,16">
+
+        </Border>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" Height="368" Margin="0,0,1,0">
+            <Button Content="Projects" Background="Transparent" BorderThickness="0" FontWeight="Bold" Margin="0,10"/>
+            <Button Content="Calendar" Background="Transparent" BorderThickness="0" FontWeight="Bold" Margin="0,10"/>
+            <Button Content="My Requests" Background="Transparent" BorderThickness="0" FontWeight="Bold" Margin="0,10"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="1"  Margin="0,324,0,20" VerticalAlignment="Center">
+            <Button Content="Logout" Command="{Binding LogoutCommand}" Background="Transparent" BorderThickness="0" FontWeight="Bold"/>
+        </StackPanel>
+
+        <!--Main - Where the projects will show up-->
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <ScrollViewer Height="368">
+                <ListBox>
+                    <ListBoxItem Content="ListBoxItem"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                    <ListBoxItem Content="Number 2"/>
+                </ListBox>
+            </ScrollViewer>
+        </StackPanel>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="600"/>
+        </Grid.ColumnDefinitions>
+
+
     </Grid>
 </Window>

@@ -15,19 +15,14 @@ using System.Windows.Shapes;
 namespace IntegDataEvent_Midterms.Views
 {
     /// <summary>
-    /// Interaction logic for second_page_admin.xaml
+    /// Interaction logic for second_page_manager.xaml
     /// </summary>
-    public partial class second_page_admin : Window
+    public partial class second_page_manager : Window
     {
-        public second_page_admin()
+        public second_page_manager()
         {
             InitializeComponent();
-            DataContext = new ViewModel.secondpageadminViewModel();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            DataContext = new ViewModel.secondpagemanagerViewModel();
         }
     }
 }

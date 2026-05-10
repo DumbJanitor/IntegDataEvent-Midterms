@@ -14,7 +14,6 @@ namespace IntegDataEvent_Midterms.ViewModel
     class LoginViewModel : ObservableObject
     {
         public Model.UserModel currentUser { get; set; }
-
         public ICommand logincommand { get; set; }
 
         public LoginViewModel()
@@ -68,6 +67,13 @@ namespace IntegDataEvent_Midterms.ViewModel
                                         isLoginValid = true;
                                         var second_page_admin = new second_page_admin();
                                         second_page_admin.Show();
+                                        Application.Current.MainWindow.Close();
+                                        break;
+
+                                    case "Manager":
+                                        isLoginValid = true;
+                                        var second_page_manager = new second_page_manager();
+                                        second_page_manager.Show();
                                         Application.Current.MainWindow.Close();
                                         break;
 

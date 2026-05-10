@@ -22,6 +22,7 @@ namespace IntegDataEvent_Midterms.Views
         public second_page()
         {
             InitializeComponent();
+            DataContext = new ViewModel.second_page_employee_ViewModel();
         }
     }
 }
